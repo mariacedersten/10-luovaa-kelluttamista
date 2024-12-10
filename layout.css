@@ -20,7 +20,7 @@ body {
   background-color: gainsboro;
   background-image: linear-gradient(to bottom right, gainsboro, white);
   padding: 1rem;
-  margin: 10px 20px;
+  margin: 10px;
   padding-bottom: 10px;
 }
 
@@ -75,7 +75,6 @@ body {
   border-color: lightgray darkgray darkgray lightgray;
   box-shadow: 3px 3px 3px darkgray;
   background-color: white;
-  margin-right: 5px;
   max-width: 100%;
 }
 
