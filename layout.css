@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 100%; /* Занимает всю доступную ширину */
+  max-width: 100%;
   width: auto;
   box-sizing: border-box;
   border: solid 1px black;
@@ -24,7 +24,16 @@ body {
   padding-bottom: 10px;
 }
 
-.container .heading h1 {
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.container .clearfix .heading h1 {
   float: right;
   width: 65%;
   box-sizing: border-box;
@@ -36,7 +45,7 @@ body {
   color: #627081;
 }
 
-.container .heading1 h1 {
+.container .reverse .heading h1 {
   float: left;
   width: 65%;
   box-sizing: border-box;
@@ -48,29 +57,29 @@ body {
   color: #627081;
 }
 
-.container .image {
+.container .clearfix .image {
   float: left;
-  max-width: 30%; /* Картинка подстраивается под размер контейнера */
-  height: auto; /* Сохраняет пропорции */
+  max-width: 30%;
+  height: auto;
 }
 
-.container .image1 {
+.container .reverse .image {
   float: right;
-  max-width: 30%; /* Картинка подстраивается под размер контейнера */
-  height: auto; /* Сохраняет пропорции */
+  max-width: 30%;
+  height: auto;
 }
 
-.container .image img {
+.container .clearfix .image img {
   padding: 5px;
   border: solid 1px;
   border-color: lightgray darkgray darkgray lightgray;
   box-shadow: 3px 3px 3px darkgray;
   background-color: white;
-  max-width: 100%;
   margin-right: 5px;
+  max-width: 100%;
 }
 
-.container .image1 img {
+.container .reverse .image img {
   padding: 5px;
   border: solid 1px;
   border-color: lightgray darkgray darkgray lightgray;
@@ -80,13 +89,13 @@ body {
   margin-left: -15px;
 }
 
-.container .text {
+.container .clearfix .text {
   float: right;
   width: 65%;
   box-sizing: border-box;
 }
 
-.container .text1 {
+.container .reverse .text {
   float: left;
   width: 65%;
   box-sizing: border-box;
@@ -115,7 +124,7 @@ body {
   .container {
     margin: 0 0 10px 0;
     width: 100%;
-    min-width: 300px;
+    min-width: 320px;
     padding: 10px;
   }
 }
