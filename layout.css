@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 2.5rem;
+}
+
+.container {
+  max-width: 100%; /* Занимает всю доступную ширину */
+  width: auto;
+  box-sizing: border-box;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: gainsboro;
+  background-image: linear-gradient(to bottom right, gainsboro, white);
+  padding: 1rem;
+  margin: 10px 20px;
+  padding-bottom: 10px;
+}
+
+.container .heading h1 {
+  float: right;
+  width: 65%;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 2.2rem;
+  grid-area: otsikko;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #627081;
+}
+
+.container .heading1 h1 {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 2.2rem;
+  grid-area: otsikko;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #627081;
+}
+
+.container .image {
+  float: left;
+  max-width: 30%; /* Картинка подстраивается под размер контейнера */
+  height: auto; /* Сохраняет пропорции */
+}
+
+.container .image1 {
+  float: right;
+  max-width: 30%; /* Картинка подстраивается под размер контейнера */
+  height: auto; /* Сохраняет пропорции */
+}
+
+.container .image img {
+  padding: 5px;
+  border: solid 1px;
+  border-color: lightgray darkgray darkgray lightgray;
+  box-shadow: 3px 3px 3px darkgray;
+  background-color: white;
+  max-width: 100%;
+  margin-right: 5px;
+}
+
+.container .image1 img {
+  padding: 5px;
+  border: solid 1px;
+  border-color: lightgray darkgray darkgray lightgray;
+  box-shadow: 3px 3px 3px darkgray;
+  background-color: white;
+  max-width: 100%;
+  margin-left: -15px;
+}
+
+.container .text {
+  float: right;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+.container .text1 {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+.container .text p {
+  text-align: justify;
+  margin-block-end: 10px;
+}
+
+.container .text1 p {
+  text-align: justify;
+  margin-block-end: 10px;
+}
+
+.container .reverse {
+  float: revert;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    margin: 0 0 10px 0;
+    width: 100%;
+    min-width: 300px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  body {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+}
